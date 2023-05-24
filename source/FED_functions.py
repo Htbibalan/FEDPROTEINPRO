@@ -90,7 +90,7 @@ def get_intermealinterval (pellettimes):
 #%%
 
 # function to get timestamps from fed csv files
-metafile = "..\\FEDXA DATA SHEETS METAFILE.xls"
+metafile = "..\\METAFILE FEDXC DATA SHEETS.xls"
 rows, header = tp.metafilereader(metafile, sheetname="METAFILE")
 
 mice = {}
@@ -117,7 +117,7 @@ for key in mice.keys():
 
 # %%
 ## gets bodyweights and adds to dictionary
-metafile = "..\\FEDXA DATA SHEETS METAFILE.xls"
+metafile = "..\\METAFILE FEDXC DATA SHEETS.xls"
 rows, header = tp.metafilereader(metafile, sheetname="METAFILE_BW")
 
 n_days = len(rows[0])
@@ -128,7 +128,7 @@ for row in rows:
 
 # %%
 ## gets hoarded pellets and adds to dictionary
-metafile = "..\\FEDXA DATA SHEETS METAFILE.xls"
+metafile = "..\\METAFILE FEDXC DATA SHEETS.xls"
 rows, header = tp.metafilereader(metafile, sheetname="METAFILE_HO")
 
 n_days = len(rows[0])

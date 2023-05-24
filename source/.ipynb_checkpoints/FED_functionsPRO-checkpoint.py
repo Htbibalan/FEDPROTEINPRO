@@ -90,7 +90,7 @@ def get_intermealinterval (pellettimes):
 #%%
 
 # function to get timestamps from fed csv files
-metafile = "..\\FEDXA DATA SHEETS METAFILE.xls"
+metafile = "..\\METAFILE FEDXC DATA SHEETS.xls"
 rows, header = tp.metafilereader(metafile, sheetname="METAFILE")
 
 mice = {}
@@ -101,23 +101,28 @@ for row in rows:
         mice[mouse_id]["sex"] = row[4]
         mice[mouse_id]["order"] = row[5]
 
+        
+        
 for key in mice.keys():
     for row in rows:
         if row[1] == key and row[3] == "FF":
-            filename = "..\\data\\{}".format(row[0])
-            if row[2] == "GRAIN":
-                mice[key]["grain_timestamps"] = get_FEDevents(filename, "Pellet")
-            elif row[2] == "PR":
+            filename = "..\\data\\{}".format (row[0])
+            if row[2] == "PR":
                 mice[key]["pr_timestamps"] = get_FEDevents(filename, "Pellet")
+               
             elif row[2] == "NR":
                 mice[key]["nr_timestamps"] = get_FEDevents(filename, "Pellet")
+             
             else:
                 print(row[2], "is not a valid type of pellet for", key)
+                
+
+        
 
 
 # %%
 ## gets bodyweights and adds to dictionary
-metafile = "..\\FEDXA DATA SHEETS METAFILE.xls"
+metafile = "..\\METAFILE FEDXC DATA SHEETS.xls"
 rows, header = tp.metafilereader(metafile, sheetname="METAFILE_BW")
 
 n_days = len(rows[0])
@@ -128,7 +133,7 @@ for row in rows:
 
 # %%
 ## gets hoarded pellets and adds to dictionary
-metafile = "..\\FEDXA DATA SHEETS METAFILE.xls"
+metafile = "..\\METAFILE FEDXC DATA SHEETS.xls"
 rows, header = tp.metafilereader(metafile, sheetname="METAFILE_HO")
 
 n_days = len(rows[0])
@@ -140,13 +145,15 @@ for row in rows:
 # %%
 # to get average pellets per day
 for key in mice.keys():
-    mice[key]["grain_avg_pellets"] = len(mice[key]["grain_timestamps"]) / 3
-    mice[key]["pr_avg_pellets"] = len(mice[key]["pr_timestamps"]) / 7
-    mice[key]["nr_avg_pellets"] = len(mice[key]["nr_timestamps"]) / 7
+    if "pr_timestamps" in mice[key].keys():
+        mice[key]["pr_avg_pellets"] = len(mice[key]["pr_timestamps"]) / 30
+    mice[key]["nr_avg_pellets"] = len(mice[key]["nr_timestamps"]) / 30
+    
+
 
 # %%
 # 
-def get_pellets_per_day(timestamps, start_time=4, days=7):
+def get_pellets_per_day(timestamps, start_time=0, days=30):
     pellets_per_day = []
     for day in range(days):
         pellets = [t for t in timestamps if (t>day*24) and (t<(day+1)*24)]
@@ -156,19 +163,17 @@ def get_pellets_per_day(timestamps, start_time=4, days=7):
     return pellets_per_day
 
 for key in mice.keys():
-    mice[key]["grain_pellets_per_day"] = get_pellets_per_day(mice[key]["grain_timestamps"], days=3)
-    mice[key]["pr_pellets_per_day"] = get_pellets_per_day(mice[key]["pr_timestamps"])
+    if "pr_timestamps" in mice[key].keys():
+        mice[key]["pr_pellets_per_day"] = get_pellets_per_day(mice[key]["pr_timestamps"])
     mice[key]["nr_pellets_per_day"] = get_pellets_per_day(mice[key]["nr_timestamps"])
 
 # %%
 # assemble pellets per day for whole timecourse
 for key in mice.keys():
-    if mice[key]["order"] == 2:
-        mice[key]["all_pellets_per_day"] = mice[key]["grain_pellets_per_day"] + \
-            mice[key]["pr_pellets_per_day"] + mice[key]["nr_pellets_per_day"]
-    else:
-                mice[key]["all_pellets_per_day"] = mice[key]["grain_pellets_per_day"] + \
-                    mice[key]["nr_pellets_per_day"] + mice[key]["pr_pellets_per_day"]
+    if "pr_timestamps" in mice[key].keys():
+        mice[key]["all_pellets_per_day"] = mice[key]["pr_pellets_per_day"] + \
+            mice[key]["nr_pellets_per_day"]
+    
 
 
 
@@ -205,14 +210,17 @@ def get_mealsize(pellettimes):
     return mealsize
 
 for key in mice.keys():
-    pr_timestamps = mice[key]["pr_timestamps"]
-    mice[key]["interpellet_intervals_pr"] = get_interpellet_intervals(pr_timestamps)
-    mice[key]["intermeal_interval_pr"] = get_intermealinterval(pr_timestamps)
-    mice[key]["mealsize_pr"] = get_mealsize(pr_timestamps)
+    if "pr_timestamps" in mice[key].keys():
+
+        pr_timestamps = mice[key]["pr_timestamps"]
+        mice[key]["interpellet_intervals_pr"] = get_interpellet_intervals(pr_timestamps)
+        mice[key]["intermeal_interval_pr"] = get_intermealinterval(pr_timestamps)
+        mice[key]["mealsize_pr"] = get_mealsize(pr_timestamps)
 
     nr_timestamps = mice[key]["nr_timestamps"]
     mice[key]["interpellet_intervals_nr"] = get_interpellet_intervals(nr_timestamps)
     mice[key]["intermeal_interval_nr"] = get_intermealinterval(nr_timestamps)
+   
     mice[key]["mealsize_nr"] = get_mealsize(nr_timestamps)
     
 # %%

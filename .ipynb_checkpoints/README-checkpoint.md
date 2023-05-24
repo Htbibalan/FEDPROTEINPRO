@@ -1,4 +1,2 @@
 # FEDPROTEINPRO
  Includes codes and data for FEDXC experiment
-12 male mice
-FED1-6 NR-PR-NR-PR and FED7-12 NRa
