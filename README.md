@@ -8,7 +8,7 @@ This repository stores data files and code scripts for FEDXC experiment where we
 
 
 
-![paradigm](https://github.com/Htbibalan/FEDProtein/blob/BNA/source/FEDXC_paradigm.png)
+![paradigm](https://github.com/Htbibalan/FEDPROTEINPRO/blob/main/source/FEDXC_paradigm.png)
 *The figure shows the overall paradigm of the experiment. Ctl stands for control group that received 20% casein pellets for 4 weeks and Exp stands for experimental group that received 20% and 5% casein pellets alternatively each week. However, the experiment was initially designed for a 4 weeks study(4 epochs) but since we ran out of NR pellets at the end of the 3rd week, we had to exclude the data for Ctl group. Nevertheless it should not be a problem to compare the 4 epochs of Exp group.*
 
 #####Cohorts
