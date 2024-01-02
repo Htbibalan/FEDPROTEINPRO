@@ -31,4 +31,4 @@ This repository stores data files and code scripts for FEDXC experiment where we
 * **/source** stores function helper files and the original data sheet collected manually by the experimenter
 * **/results** mainly stores data extracted from python scripts and converted for JASP
 
-Look at **FEDXC_Metafile** to have an overview of the FED files attributed to each mouse and each epoch, the same file also stores bodyweight data of all mice.
+Look at [Metafile](https://github.com/Htbibalan/FEDPROTEINPRO/blob/main/FEDXC_METAFILE.xls) to have an overview of the FED files attributed to each mouse and each epoch, the same file also stores bodyweight data of all mice.
