@@ -1,0 +1,10 @@
+"Group1","Group2","p_value"
+"epoch_E2_number_of_snacks","epoch_E1_number_of_snacks",1
+"epoch_E3_number_of_snacks","epoch_E1_number_of_snacks",0.0122364802679144
+"epoch_E4_number_of_snacks","epoch_E1_number_of_snacks",1
+"epoch_E2_number_of_snacks","epoch_E2_number_of_snacks",NA
+"epoch_E3_number_of_snacks","epoch_E2_number_of_snacks",0.0223646401628188
+"epoch_E4_number_of_snacks","epoch_E2_number_of_snacks",1
+"epoch_E2_number_of_snacks","epoch_E3_number_of_snacks",NA
+"epoch_E3_number_of_snacks","epoch_E3_number_of_snacks",NA
+"epoch_E4_number_of_snacks","epoch_E3_number_of_snacks",0.0657242983795347

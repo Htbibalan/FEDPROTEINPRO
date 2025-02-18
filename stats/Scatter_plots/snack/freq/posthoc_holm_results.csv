@@ -1,0 +1,10 @@
+"Group1","Group2","p_value"
+"epoch_E2_snack_frequency","epoch_E1_snack_frequency",1
+"epoch_E3_snack_frequency","epoch_E1_snack_frequency",0.0274187989187385
+"epoch_E4_snack_frequency","epoch_E1_snack_frequency",1
+"epoch_E2_snack_frequency","epoch_E2_snack_frequency",NA
+"epoch_E3_snack_frequency","epoch_E2_snack_frequency",0.0274187989187385
+"epoch_E4_snack_frequency","epoch_E2_snack_frequency",1
+"epoch_E2_snack_frequency","epoch_E3_snack_frequency",NA
+"epoch_E3_snack_frequency","epoch_E3_snack_frequency",NA
+"epoch_E4_snack_frequency","epoch_E3_snack_frequency",0.064713569780294

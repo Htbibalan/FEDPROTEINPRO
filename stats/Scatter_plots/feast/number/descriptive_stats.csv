@@ -1,0 +1,5 @@
+"epoch","n","mean","sd","median","min","max"
+"epoch_E1_number_of_mega_meals",6,29.6666666666667,9.3523615556001,33.5,18,38
+"epoch_E2_number_of_mega_meals",6,22.5,8.45576726264388,18.5,15,36
+"epoch_E3_number_of_mega_meals",6,39.1666666666667,10.7780641428165,37,29,57
+"epoch_E4_number_of_mega_meals",6,20.8333333333333,17.1978680849304,14,9,55

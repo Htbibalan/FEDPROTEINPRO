@@ -1,0 +1,10 @@
+"Group1","Group2","p_value"
+"epoch_E2_meal_frequency","epoch_E1_meal_frequency",0.141559783901554
+"epoch_E3_meal_frequency","epoch_E1_meal_frequency",0.0328032529182969
+"epoch_E4_meal_frequency","epoch_E1_meal_frequency",0.00776962551411388
+"epoch_E2_meal_frequency","epoch_E2_meal_frequency",NA
+"epoch_E3_meal_frequency","epoch_E2_meal_frequency",0.890630107774257
+"epoch_E4_meal_frequency","epoch_E2_meal_frequency",0.702389293385292
+"epoch_E2_meal_frequency","epoch_E3_meal_frequency",NA
+"epoch_E3_meal_frequency","epoch_E3_meal_frequency",NA
+"epoch_E4_meal_frequency","epoch_E3_meal_frequency",0.890630107774257

@@ -1,0 +1,10 @@
+"Group1","Group2","p_value"
+"epoch_E2_mega_meal_frequency","epoch_E1_mega_meal_frequency",0.855867787610663
+"epoch_E3_mega_meal_frequency","epoch_E1_mega_meal_frequency",0.604900432958499
+"epoch_E4_mega_meal_frequency","epoch_E1_mega_meal_frequency",0.855867787610663
+"epoch_E2_mega_meal_frequency","epoch_E2_mega_meal_frequency",NA
+"epoch_E3_mega_meal_frequency","epoch_E2_mega_meal_frequency",0.0766323452116305
+"epoch_E4_mega_meal_frequency","epoch_E2_mega_meal_frequency",0.855867787610663
+"epoch_E2_mega_meal_frequency","epoch_E3_mega_meal_frequency",NA
+"epoch_E3_mega_meal_frequency","epoch_E3_mega_meal_frequency",NA
+"epoch_E4_mega_meal_frequency","epoch_E3_mega_meal_frequency",0.27823049812294

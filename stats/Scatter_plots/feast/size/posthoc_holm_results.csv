@@ -1,0 +1,10 @@
+"Group1","Group2","p_value"
+"epoch_E2_mega_meal_size","epoch_E1_mega_meal_size",1
+"epoch_E3_mega_meal_size","epoch_E1_mega_meal_size",1
+"epoch_E4_mega_meal_size","epoch_E1_mega_meal_size",0.443863893435838
+"epoch_E2_mega_meal_size","epoch_E2_mega_meal_size",NA
+"epoch_E3_mega_meal_size","epoch_E2_mega_meal_size",1
+"epoch_E4_mega_meal_size","epoch_E2_mega_meal_size",1
+"epoch_E2_mega_meal_size","epoch_E3_mega_meal_size",NA
+"epoch_E3_mega_meal_size","epoch_E3_mega_meal_size",NA
+"epoch_E4_mega_meal_size","epoch_E3_mega_meal_size",0.443863893435838

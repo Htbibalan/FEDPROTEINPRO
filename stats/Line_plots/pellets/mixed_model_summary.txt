@@ -1,0 +1,49 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: pellets ~ epoch * day_in_epoch_factor + (1 | mouse_id)
+   Data: df_long
+
+REML criterion at convergence: 1374.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.4060 -0.3683  0.0254  0.4250  2.6077 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ mouse_id (Intercept) 490.5    22.15   
+ Residual             674.0    25.96   
+Number of obs: 168, groups:  mouse_id, 6
+
+Fixed effects:
+                             Estimate Std. Error      df t value Pr(>|t|)    
+(Intercept)                   180.000     13.932  24.177  12.920 2.39e-12 ***
+epochE2                       -37.167     14.989 135.000  -2.480  0.01438 *  
+epochE3                        40.500     14.989 135.000   2.702  0.00778 ** 
+epochE4                       -31.333     14.989 135.000  -2.090  0.03845 *  
+day_in_epoch_factor2           -5.333     14.989 135.000  -0.356  0.72253    
+day_in_epoch_factor3          -13.000     14.989 135.000  -0.867  0.38731    
+day_in_epoch_factor4           -6.167     14.989 135.000  -0.411  0.68142    
+day_in_epoch_factor5            6.500     14.989 135.000   0.434  0.66523    
+day_in_epoch_factor6           -2.000     14.989 135.000  -0.133  0.89405    
+day_in_epoch_factor7          -35.333     14.989 135.000  -2.357  0.01985 *  
+epochE2:day_in_epoch_factor2   23.167     21.198 135.000   1.093  0.27639    
+epochE3:day_in_epoch_factor2   -3.833     21.198 135.000  -0.181  0.85677    
+epochE4:day_in_epoch_factor2   28.667     21.198 135.000   1.352  0.17852    
+epochE2:day_in_epoch_factor3   43.333     21.198 135.000   2.044  0.04287 *  
+epochE3:day_in_epoch_factor3  -13.833     21.198 135.000  -0.653  0.51513    
+epochE4:day_in_epoch_factor3   37.500     21.198 135.000   1.769  0.07914 .  
+epochE2:day_in_epoch_factor4   49.833     21.198 135.000   2.351  0.02018 *  
+epochE3:day_in_epoch_factor4  -25.833     21.198 135.000  -1.219  0.22509    
+epochE4:day_in_epoch_factor4   55.000     21.198 135.000   2.595  0.01052 *  
+epochE2:day_in_epoch_factor5   48.167     21.198 135.000   2.272  0.02465 *  
+epochE3:day_in_epoch_factor5  -39.833     21.198 135.000  -1.879  0.06238 .  
+epochE4:day_in_epoch_factor5   31.333     21.198 135.000   1.478  0.14169    
+epochE2:day_in_epoch_factor6   66.167     21.198 135.000   3.121  0.00220 ** 
+epochE3:day_in_epoch_factor6  -30.667     21.198 135.000  -1.447  0.15030    
+epochE4:day_in_epoch_factor6   57.333     21.198 135.000   2.705  0.00772 ** 
+epochE2:day_in_epoch_factor7   96.167     21.198 135.000   4.537 1.25e-05 ***
+epochE3:day_in_epoch_factor7    8.333     21.198 135.000   0.393  0.69485    
+epochE4:day_in_epoch_factor7  101.333     21.198 135.000   4.780 4.51e-06 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

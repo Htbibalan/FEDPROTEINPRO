@@ -1,0 +1,10 @@
+"Group1","Group2","p_value"
+"epoch_E2_number_of_pellets","epoch_E1_number_of_pellets",0.952866428464922
+"epoch_E3_number_of_pellets","epoch_E1_number_of_pellets",0.073298134391118
+"epoch_E4_number_of_pellets","epoch_E1_number_of_pellets",0.952866428464922
+"epoch_E2_number_of_pellets","epoch_E2_number_of_pellets",NA
+"epoch_E3_number_of_pellets","epoch_E2_number_of_pellets",0.67072862951298
+"epoch_E4_number_of_pellets","epoch_E2_number_of_pellets",0.952866428464922
+"epoch_E2_number_of_pellets","epoch_E3_number_of_pellets",NA
+"epoch_E3_number_of_pellets","epoch_E3_number_of_pellets",NA
+"epoch_E4_number_of_pellets","epoch_E3_number_of_pellets",0.713970758532806

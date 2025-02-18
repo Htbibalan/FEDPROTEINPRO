@@ -1,0 +1,10 @@
+"Group1","Group2","p_value"
+"epoch_E2_number_of_mega_meals","epoch_E1_number_of_mega_meals",0.923916150704415
+"epoch_E3_number_of_mega_meals","epoch_E1_number_of_mega_meals",0.590118363358074
+"epoch_E4_number_of_mega_meals","epoch_E1_number_of_mega_meals",0.923916150704415
+"epoch_E2_number_of_mega_meals","epoch_E2_number_of_mega_meals",NA
+"epoch_E3_number_of_mega_meals","epoch_E2_number_of_mega_meals",0.0794350625316985
+"epoch_E4_number_of_mega_meals","epoch_E2_number_of_mega_meals",0.923916150704415
+"epoch_E2_number_of_mega_meals","epoch_E3_number_of_mega_meals",NA
+"epoch_E3_number_of_mega_meals","epoch_E3_number_of_mega_meals",NA
+"epoch_E4_number_of_mega_meals","epoch_E3_number_of_mega_meals",0.275550906200301
